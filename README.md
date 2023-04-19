@@ -6,12 +6,14 @@
 ## Installation
 
 Clone repository and navigate to root directory
+
 ```bash
 git clone https://github.com/dangattringer/cvision.git
 cd cvision
 ```
 
 Install from source
+
 ```bash
 pip install -e .
 ```
