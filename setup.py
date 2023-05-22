@@ -14,14 +14,13 @@ def get_version():
     
 
 setuptools.setup(
-    name='supervision',
+    name='cvision',
     version=get_version(),
     author='Daniel Gattringer',
     author_email='daniel.gattringer100@gmail.com',
     description='A set of easy-to-use utilities for any computer vision project.',
     long_description=README,
     long_description_content_type='text/markdown',
-    # url='https://github.com/roboflow/supervision',
     install_requires=[
         'numpy>=1.20.0',
         'opencv-python'
