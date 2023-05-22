@@ -53,8 +53,13 @@ class VideoReader:
         """
         Generator that iterates over the frames of the video file. Each iteration returns a frame as a NumPy array.
         """
-        while self.cap.isOpened():
-            ret, frame = self.cap.read()
-            if not ret:
-                break
-            yield frame
+        return self
+    
+    def __next__(self) -> np.ndarray:
+        """
+        Returns the next frame of the video file as a NumPy array.
+        """
+        ret, frame = self.cap.read()
+        
+        if ret:
+            return frame
